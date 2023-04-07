@@ -429,50 +429,6 @@ pre, code {
   }
 }
 
-.nav-md {
-  .container.body {
-    .right_col {
-      padding: 10px 20px 0;
-      margin-right: 230px;
-    }
-    .col-md-3.left_col {
-      min-height: 100%;
-      width: 230px;
-      padding: 0;
-      position: absolute;
-      display: flex;
-      z-index: 1;
-      &.menu_fixed {
-        height: 100%;
-        position: fixed;
-      }
-    }
-  }
-  ul.nav.child_menu li {
-    &:before {
-      background: $color_fiord_approx;
-      bottom: auto;
-      content: "";
-      height: 8px;
-      right: 23px;
-      margin-top: 15px;
-      position: absolute;
-      left: auto;
-      width: 8px;
-      z-index: 1;
-      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-      border-radius: 50%;
-    }
-    &:after {
-      border-right: 1px solid $color_fiord_approx;
-      bottom: 0;
-      content: "";
-      right: 27px;
-      position: absolute;
-      top: 0;
-    }
-  }
-}
 
 body {
   color: $color_bermuda_gray_approx;
@@ -1238,7 +1194,7 @@ a {
       border: 1px solid $color_mercury_49_approx;
       border-left: 0;
     }
-  }
+  }.form-control
   .input-group-btn button {
     @include border-radius(25px 0 0 25px !important);
     border: 1px solid $color_mercury_49_approx;
@@ -3836,7 +3792,7 @@ textarea {
     input[type="email"] {
       @include border-radius(3px);
       @include box-shadow(0 1px 0 $white, 0 -2px 5px $black_8 inset);
-      border: 1px solid $color_pumice_approx;
+      border: none;
       color: $color_tapa_approx;
       margin: 0 0 20px;
       width: 100%;
